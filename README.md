@@ -8,9 +8,9 @@
 
 ![Screen Shot 2022-12-28 at 6 41 14 PM](https://user-images.githubusercontent.com/111612130/209885363-53750e7f-f7f7-4d2e-a5fa-465f77b0ff20.png)
 
-- As evidenced by the above things like vehicle length ang ground clearence had the highest amount of non-random variance suggesting they contributed heavily towards vehicle MPG ratings. 
+- As evidenced by the above things like vehicle length ang ground clearance had the highest amount of non-random variance suggesting they contributed heavily towards vehicle MPG ratings. 
 - As evidenced by the above, the slope of the liner model is not considered to be zero as the p-value is smaller than the significance interval. 
-- According to the model, it suggests that the data within the model predicts the variation 71.5% of the time, which I would consider an effective model for predecting MechaCar protorype MPGs. 
+- According to the model, it suggests that the data within the model predicts the variation 71.5% of the time, which I would consider an effective model for predicting MechaCar prototype MPGs. 
 
 
 ## Part 2 - Summary Statistics on Suspension Coils
@@ -46,19 +46,13 @@ Lot 3:
 
 ![Screen Shot 2022-12-28 at 7 11 26 PM](https://user-images.githubusercontent.com/111612130/209887276-171083dc-1e3a-4651-8a54-0ed6b60f4871.png)
 
-- There are a few interesting points observed from these tests. First thing to note is that the total did not have a lower P-value than 0.05, thus the null hypothosis cannont be rejected, the same was the case with lots 1 & 2 which had means very close to 1500 PSI and P-values close to that of the overall population. What was interesting, however, was lot-3 which showed a P-value of 0.04 which is lower than 0.05 and statistically significant, suggesting the null hypothisis can be rejected. This is consistant with aforementioned results, and suggests a manufacturing issue with lot 3. 
+- There are a few interesting points observed from these tests. First thing to note is that the total did not have a lower P-value than 0.05, thus the null hypothesis cannot be rejected, the same was the case with lots 1 & 2 which had means very close to 1500 PSI and P-values close to that of the overall population. What was interesting, however, was lot-3 which showed a P-value of 0.04 which is lower than 0.05 and statistically significant, suggesting the null hypothesis can be rejected. This is consistent with aforementioned results, and suggests a manufacturing issue with lot 3. 
 
 
 
 ## Part 4 - Study Design: MechaCar vs. Competition
 *** 
 
-Using your knowledge of R, design a statistical study to compare performance of the MechaCar vehicles against performance of vehicles from other manufacturers.
-Follow the instructions below to complete Part 4.
-In your README, create a subheading ## Study Design: MechaCar vs Competition.
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+- Going forward, further studies can be created to better understand key MechaCar characteristics vs. the competition. One thing that I thing would be particularly beneficial to the consumer and a bit easier to model than other aspects of the car would be horse power considering data on engines, car weight, etc is readily available and can be easily modeled and compared to competitors data. 
+
+- Generally speaking the test would be to determine if MechaCar's had more horespower than comprable competitors. The null hypothesis would be that it does not, while the alternative hypothesis would be that it does. I would test and see for competitors, cars, what was the size, length, engine size, and engine cylinders, and how does that correlate with horsepower; I would then use those results to determine which aspects had the highest correlation to horsepower. We could then see how MechaCars data compared to those key drivers allowing us to predict if Mechcar will likely have more horsepower mainly through linear regression testing. 
